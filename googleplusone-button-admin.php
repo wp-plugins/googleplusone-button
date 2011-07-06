@@ -7,7 +7,7 @@
 
 
 function twg_gpo_admin_menu() {
-	add_options_page('Google +1 Button', 'Google +1 Button', 'administrator','gpo-button', 'gpo_admin_page');
+	add_options_page('Google Plusone(+1) Button', 'Google Plusone(+1) Button', 'administrator','gpo-button', 'gpo_admin_page');
 }
 
 
