@@ -30,10 +30,12 @@ Intallation is easy. Install it normally as you do with rest of the plugins
 1. Download and unzip the plugin .zip.<br />
 2. Copy the unzipped folder in your Plugins directory under wordpress installation. (wp-content/plugins)<br />
 3. Activate the plugin through the plugin window in the admin panel.<br />
-4. Configure the settings through Settings->Google+ Button in the admin panel.
+4. Configure the settings through Settings->Google Plusone(+1) Button in the admin panel.
 
 
 == Screenshots ==
+images/ss-be.jpg
+images/ss-fe.jpg
 You can Check Screen Shots on my website :<br />
 [Google Plusone(+1) Button](http://www.thewebgig.com/google-plusone-button-wordpress-plugin/)
 <br />
