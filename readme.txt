@@ -1,4 +1,4 @@
-=== Google +1 Button ===
+=== Google Plusone(+1) Button ===
 Contributors: Sagar Bhandari ,Pravash Chamling Rai
 Plugin Site: http://www.thewebgig.com
 Tags: Google +1, Google plus one,Google plus one button, Google +1 button 
@@ -35,5 +35,5 @@ Intallation is easy. Install it normally as you do with rest of the plugins
 
 == Screenshots ==
 You can Check Screen Shots on my website :<br />
-[Google+1 Button](http://www.thewebgig.com/google-plusone-button-wordpress-plugin/)
+[Google Plusone(+1) Button](http://www.thewebgig.com/google-plusone-button-wordpress-plugin/)
 <br />

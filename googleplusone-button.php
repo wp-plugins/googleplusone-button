@@ -1,12 +1,12 @@
 <?php
 /**
- * @package Google+1 Button
+ * @package Google Plusone(+1) Button
  * @version 1.0
  * @author Sagar Bhandari <webgig.sagar@gmail.com>
  */
 
 /*
-	Plugin Name: Google +1 Button
+	Plugin Name:Google Plusone(+1) Button
 	Description: WordPress plugin for Google +1 button. 
 	Author: Sagar Bhandari
 	Author URI: http://www.thewebgig.com
@@ -17,9 +17,9 @@
 
 
 
-require_once('gpo_button_admin.php');
-require_once('gpo_button_display.php');
-require_once('gpo_button_shortcode.php');
+require_once('googleplusone-button-admin.php');
+require_once('googleplusone-button-display.php');
+require_once('googleplusone-button-shortcode.php');
 
 
 /* Runs when plugin is activated */
@@ -61,8 +61,8 @@ function twg_gpo_remove() {
 
 function twg_gpo_enqueue_scripts(){
 	wp_enqueue_script( 'gpojs', 'https://apis.google.com/js/plusone.js' );
-	wp_enqueue_script( 'gpocustomjs', get_bloginfo('url').'/wp-content/plugins/gpo-button/js/gpo_button.js' );
-	wp_enqueue_style( 'gpoadmincss', get_bloginfo('url').'/wp-content/plugins/gpo-button/css/gpo_button.css');
+	wp_enqueue_script( 'gpocustomjs', get_bloginfo('url').'/wp-content/plugins/googleplusone-button/js/gpo_button.js' );
+	wp_enqueue_style( 'gpoadmincss', get_bloginfo('url').'/wp-content/plugins/googleplusone-button/css/gpo_button.css');
 }
 
 ?>

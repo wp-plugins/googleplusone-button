@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Google+1 Button
+ * @package Google Plusone(+1) Button
  * @version 1.0
  * @author Sagar Bhandari <webgig.sagar@gmail.com>
  */

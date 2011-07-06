@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Google+1 Button
+ * @package Google Plusone(+1) Button
  * @version 1.0
  * @author Sagar Bhandari <webgig.sagar@gmail.com>
  */
@@ -55,7 +55,7 @@ function gpo_admin_page() {
     <?php } ?>
 
 
-	<h2><img src="<?php echo get_bloginfo('url').'/wp-content/plugins/gpo-button/images/+1.jpg'; ?>"  /> Google +1 Button</h2>
+	<h2><img src="<?php echo get_bloginfo('url').'/wp-content/plugins/googleplusone-button/images/+1.jpg'; ?>"  /> Google +1 Button</h2>
 	
     
     <div id="options">
