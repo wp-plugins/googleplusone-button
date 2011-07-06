@@ -37,3 +37,11 @@ Intallation is easy. Install it normally as you do with rest of the plugins
 1. Frontend View
 2. Admin View
 <br />
+
+== Changelog ==
+
+= 1.0.0 =
+* First Release
+
+= 1.0.1 =
+* Tested in 3.2
