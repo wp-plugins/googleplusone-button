@@ -7,11 +7,11 @@
 
 /*
 	Plugin Name:Google Plusone(+1) Button
-	Description: WordPress plugin for Google +1 button. This plugin displays the google +1 button in different styles , positions. 
+	Description: WordPress plugin for Google +1 button. 
 	Author: Sagar Bhandari
 	Author URI: http://www.thewebgig.com
 	Plugin URI: http://www.thewebgig.com
-	Version: 1.0
+	Version: 1.0.1
 	License: GPL
 */
 
