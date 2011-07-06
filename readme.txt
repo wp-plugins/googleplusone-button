@@ -36,4 +36,3 @@ Intallation is easy. Install it normally as you do with rest of the plugins
 == Screenshots ==
 1. Frontend View
 2. Admin View
-<br />
