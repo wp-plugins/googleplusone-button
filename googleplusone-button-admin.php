@@ -172,7 +172,7 @@ function gpo_admin_page() {
 				    <span class="meta-sep">|</span> <span class="edit-link"</span>
             </div>
 		    
-            <div class="notes" style="font-size:11px"> <strong>Note:-</strong> The actual view in your website might a bit differernt than what you see here. This is just a rough preview</div>
+            <div class="notes" style="font-size:11px"> <strong>Note:-</strong> The actual view in your website might a bit different than what you see here. This is just a rough preview</div>
             </div>
    </div>
 	
