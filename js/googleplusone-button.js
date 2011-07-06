@@ -1,8 +1,9 @@
 /**
- * @package Google+1 Button
- * @version 1.0
+ * @package Google Plusone(+1) Button
+ * @version 1.0.1
  * @author Sagar Bhandari <webgig.sagar@gmail.com>
  */
+
  
 jQuery(document).ready(function() {
 		gpo_button_display();
@@ -17,7 +18,6 @@ jQuery(document).ready(function() {
 		
 		
 		jQuery('#twg_gpo_button_location').change(function() {
-	  		//var location = jQuery("#twg_gpo_button_location option:selected").val();
 			gpo_button_display();
 		});
 });

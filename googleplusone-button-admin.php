@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Google Plusone(+1) Button
- * @version 1.0
+ * @version 1.0.1
  * @author Sagar Bhandari <webgig.sagar@gmail.com>
  */
 

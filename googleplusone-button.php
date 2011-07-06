@@ -1,17 +1,17 @@
 <?php
 /**
  * @package Google Plusone(+1) Button
- * @version 1.0
+ * @version 1.0.1
  * @author Sagar Bhandari <webgig.sagar@gmail.com>
  */
 
 /*
-	Plugin Name:Google Plusone(+1) Button
+	Plugin Name: Google Plusone(+1) Button
 	Description: WordPress plugin for Google +1 button. 
 	Author: Sagar Bhandari
 	Author URI: http://www.thewebgig.com
-	Plugin URI: http://www.thewebgig.com
-	Version: 1.0
+	Plugin URI: http://www.thewebgig.com/google-plusone-button-wordpress-plugin/
+	Version: 1.0.1
 	License: GPL
 */
 
