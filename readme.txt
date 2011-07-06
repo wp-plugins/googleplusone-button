@@ -34,8 +34,6 @@ Intallation is easy. Install it normally as you do with rest of the plugins
 
 
 == Screenshots ==
-1. images/ss-be.jpg
-2. images/ss-fe.jpg
-You can Check Screen Shots on my website :<br />
-[Google Plusone(+1) Button](http://www.thewebgig.com/google-plusone-button-wordpress-plugin/)
+1. Frontend View
+2. Admin View
 <br />
