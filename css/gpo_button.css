@@ -1,0 +1,130 @@
+@charset "utf-8";
+/**
+ * @package Google+1 Button
+ * @version 1.0
+ * @author Sagar Bhandari <webgig.sagar@gmail.com>
+ */
+
+.wrap{
+	margin-top: 40px;
+}
+
+.wrap p {
+	margin-bottom: 30px;
+}
+
+
+#options{
+	float: left;
+	width: 400px;
+	padding-top:20px;
+}
+
+#options form{
+	width: 300px;
+}
+
+.element{
+	margin-bottom: 20px;	
+	width: 300px;
+}
+
+.element label{
+	width:120px;
+	display:block;
+	float:left;
+}
+
+#preview_pane{
+	float: left;
+	width:400px;
+	padding-left:20px;
+}
+
+
+#preview_pane h3{
+	padding:0px;
+	margin:0px;
+}
+
+
+#preview_button {
+	padding-left:0px;
+	width: 120px;
+}
+
+#preview_button_container{
+	position: absolute;
+}
+
+
+#donate{
+	float: left;
+	width: 150px;
+	padding-left:20px;
+}
+
+#donate h3{	
+    padding:0px;
+	margin:0px;
+}
+#donate form{
+	padding:0px;
+	margin:0px;
+}
+
+
+.notes{
+	margin-top:20px;
+	
+}
+.notes h4{
+	margin:0px;
+}
+.notes p{ 
+	margin:0px;
+	padding:0px;
+	width:300px;
+	font-size:11px;
+}
+.notes dl{
+	padding:10px;
+}
+
+.notes dl dt{
+	font-weight:bold;
+	font-size:11px;
+}
+
+.notes dl dd{
+	width:450px;
+	display:block;
+	font-size:11px;
+}
+
+
+.gpo_leftcontainer {
+	float:left;
+	top: 0px;
+	left: opx;
+}
+
+.gpo_leftcontainer .previewbtn {
+	margin:4px;
+	padding-bottom:2px;
+	float:left;
+	clear:both;
+}
+
+.gpo_bottomcontainer {
+	width:50%;
+	padding-top:1px;
+}
+
+.gpo_bottomcontainer .previewbtn {
+	margin:4px;
+	float:left;
+}
+
+.entry-meta span{font-size:11px}
+.entry-utility span{font-size:11px}
