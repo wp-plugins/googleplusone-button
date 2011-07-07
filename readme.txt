@@ -5,7 +5,7 @@ Tags: Google +1, Google Plusone(+1) Button , Google plus one,Google plus one but
 Requires at least: 3.0+
 Tested up to: 3.2
 Stable tag: 1.2
-
+ 
 == Description ==
 
 [Author Site](http://www.thewebgig.com)|
