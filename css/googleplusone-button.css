@@ -17,17 +17,17 @@
 
 #options{
 	float: left;
-	width: 400px;
+	width: 515px;
 	padding-top:20px;
 }
 
 #options form{
-	width: 300px;
+	width: 515px;
 }
 
 .element{
 	margin-bottom: 20px;	
-	width: 300px;
+	width: 510px;
 }
 
 .element label{

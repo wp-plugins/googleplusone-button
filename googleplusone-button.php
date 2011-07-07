@@ -46,21 +46,23 @@ function twg_gpo_install(){
 	add_option("twg_gpo_include_count", 'true', '', 'yes');
 	add_option("twg_gpo_button_location", 'top', '', 'yes');
 	add_option("twg_gpo_button_language", "{lang: 'en-US'}", '', 'yes');
+	add_option("twg_gpo_button_display_in", 'post');
 
 }
 
 function twg_gpo_remove() {
 	
-	delete_option("twg_gpo_button_size", 'standard', '', 'yes');
-	delete_option("twg_gpo_include_count", 'true', '', 'yes');
-	delete_option("twg_gpo_button_location", 'top', '', 'yes');
-	delete_option("twg_gpo_button_language", "{lang: 'en-US'}", '', 'yes');
+	delete_option("twg_gpo_button_size");
+	delete_option("twg_gpo_include_count");
+	delete_option("twg_gpo_button_location");
+	delete_option("twg_gpo_button_language");
+	delete_option("twg_gpo_button_display_in");
 
 }
 
 
 function twg_gpo_enqueue_scripts(){
-	wp_enqueue_script( 'gpojs', 'https://apis.google.com/js/plusone.js' );
+	//wp_enqueue_script( 'gpojs', 'https://apis.google.com/js/plusone.js' );
 	wp_enqueue_script( 'gpocustomjs', get_bloginfo('url').'/wp-content/plugins/googleplusone-button/js/googleplusone-button.js' );
 	wp_enqueue_style( 'gpoadmincss', get_bloginfo('url').'/wp-content/plugins/googleplusone-button/css/googleplusone-button.css');
 }

@@ -6,11 +6,23 @@
  */
 
 
+add_action('wp_print_scripts','twg_gpo_print_scripts');
+
+function twg_gpo_print_scripts(){
+  $twg_gpo_button_language   = get_option('twg_gpo_button_language');
+  
+  if($twg_gpo_button_language!='en-US')
+	   $lang = "{lang:'".$twg_gpo_button_language."'}";
+
+  echo "<script type='text/javascript' src='http://apis.google.com/js/plusone.js'>".$lang."</script>\n";
+}
 
 function twg_gpo_init() {
 	
-	if (!is_admin()) 		
-	    wp_enqueue_script('gpofejs', 'http://apis.google.com/js/plusone.js','','');
+	if (!is_admin()) {		
+	   // wp_enqueue_script('gpofejs', 'http://apis.google.com/js/plusone.js','','');
+	    wp_enqueue_style('gpofecss', get_bloginfo('url').'/wp-content/plugins/googleplusone-button/css/googleplusone-button-fe.css');
+	}
 }    
 
 
@@ -58,48 +70,23 @@ function twg_gpo_button_main(){
 	$twg_gpo_button_size       = get_option('twg_gpo_button_size');
 	$twg_gpo_include_count     = get_option('twg_gpo_include_count');
 	$twg_gpo_button_location   = get_option('twg_gpo_button_location');
-	$twg_gpo_button_language   = get_option('twg_gpo_button_language');
 	$twg_gpo_button_display_in = get_option('twg_gpo_button_display_in');
-	
-?>
-<style type="text/css">
+    $twg_gpo_button_language   = get_option('twg_gpo_button_language');
+  
+  if($twg_gpo_button_language!='en-US')
+	   $lang = "{lang:'".$twg_gpo_button_language."'}";
 
-	#gpo_leftcontainer {
-		float:left;
-		top: 0px;
-		left: opx;
-   }
 
-	#gpo_leftcontainer .gpo_buttons {
-		margin:4px;
-		padding-bottom:2px;
-		float:left;
-		clear:both;
-	}
-	
-	#gpo_bottomcontainer {
-		width:50%;
-		padding-top:1px;
-	}
-	
-	#gpo_bottomcontainer .gpo_buttons {
-		margin:4px;
-		float:left;
-	}
-</style>
-<?php
- 	
 	if ($twg_gpo_button_location == 'left'){
-		 return  '<div id="gpo_leftcontainer"><div class="gpo_buttons"><g:plusone size="'.$twg_gpo_button_size.'" count="'.$twg_gpo_include_count.'"></g:plusone></div></div>';
+		 return  '<div class="gpo_leftcontainer"><div class="gpo_buttons"><g:plusone size="'.$twg_gpo_button_size.'" count="'.$twg_gpo_include_count.'"></g:plusone></div></div>';
+		return $op ;
 	} else if (($twg_gpo_button_location == 'top') || ($twg_gpo_button_location == 'bottom') || ($twg_gpo_button_location == 'both')){
-		return '<div id="gpo_bottomcontainer">
-						<div class="gpo_buttons">
-								<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
-						        <g:plusone size="'.$twg_gpo_button_size.'" count="'.$twg_gpo_include_count.'"></g:plusone>
+		return '<div class="gpo_bottomcontainer">
+						<div class="gpo_buttons"><!--<script type="text/javascript" src="http://apis.google.com/js/plusone.js">'.$lang.'</script>-->
+						        <g:plusone href="'.get_permalink().'" size="'.$twg_gpo_button_size.'" count="'.$twg_gpo_include_count.'"></g:plusone>
 						</div>
 			   </div>
-			   <div style="clear:both"></div>
-			   <div style="padding-bottom:5px;"></div>';
+			   <div style="clear:both"></div>';
 	}
 }
 ?>

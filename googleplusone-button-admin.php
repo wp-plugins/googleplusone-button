@@ -5,13 +5,60 @@
  * @author Sagar Bhandari <webgig.sagar@gmail.com>
  */
 
+$lang = array();
+$lang[] = array('ar','Arabic - العربية');
+$lang[] = array('bg','Bulgarian - български');
+$lang[] = array('ca','Catalan - català');
+$lang[] = array('zh-CN','Chinese (Simplified) - 中文 &rlm;（簡体）');
+$lang[] = array('zh-TW','Chinese (Traditional) - 中文 &rlm;（繁體）');
+$lang[] = array('hr','Croatian - hrvatski');
+$lang[] = array('cs','Czech - čeština');
+$lang[] = array('da','Danish - dansk');
+$lang[] = array('nl','Dutch - Nederlands');
+$lang[] = array('en-US','English (US) - English &rlm;(US)');
+$lang[] = array('en-GB','English (UK) - English &rlm;(UK)');
+$lang[] = array('et','Estonian - eesti');
+$lang[] = array('fil','Filipino - Filipino');
+$lang[] = array('fi','Finnish - suomi');
+$lang[] = array('fr','French - français');
+$lang[] = array('de','German - Deutsch');
+$lang[] = array('el','Greek - Ελληνικά');
+$lang[] = array('iw','Hebrew - עברית');
+$lang[] = array('hi','Hindi - हिन्दी');
+$lang[] = array('hu','Hungarian - magyar');
+$lang[] = array('id','Indonesian - Bahasa Indonesia');
+$lang[] = array('it','Italian - italiano');
+$lang[] = array('ja','Japanese - 日本語');
+$lang[] = array('ko','Korean - 한국어');
+$lang[] = array('lv','Latvian - latviešu');
+$lang[] = array('lt','Lithuanian - lietuvių');
+$lang[] = array('ms','Malay - Bahasa Melayu');
+$lang[] = array('no','Norwegian - norsk');
+$lang[] = array('fa','Persian - فارسی');
+$lang[] = array('pl','Polish - polski');
+$lang[] = array('pt-BR','Portuguese (Brazil) - português &rlm;(Brasil)');
+$lang[] = array('pt-PT','Portuguese (Portugal) - Português &rlm;(Portugal)');
+$lang[] = array('ro','Romanian - română');
+$lang[] = array('ru','Russian - русский');
+$lang[] = array('sr','Serbian - српски');
+$lang[] = array('sv','Swedish - svenska');      
+$lang[] = array('sk','Slovak - slovenský');      
+$lang[] = array('sl','Slovenian - slovenščina');
+$lang[] = array('es','Spanish - español');
+$lang[] = array('es-419','Spanish (Latin America) - español &rlm;(Latinoamérica y el Caribe)');
+$lang[] = array('th','Thai - ไทย');
+$lang[] = array('tr','Turkish - Türkçe');
+$lang[] = array('uk','Ukrainian - українська');
+$lang[] = array('vi','Vietnamese - Tiếng Việt');
 
+       
 function twg_gpo_admin_menu() {
 	add_options_page('Google Plusone(+1) Button', 'Google Plusone(+1) Button', 'administrator','gpo-button', 'gpo_admin_page');
 }
 
 
 function gpo_admin_page() {
+	global $lang;
 
 	if (!current_user_can('manage_options'))  {
 		wp_die( __('You do not have sufficient permissions to access this page.') );
@@ -30,7 +77,7 @@ function gpo_admin_page() {
 		update_option('twg_gpo_button_size', $_POST['twg_gpo_button_size']);
 		update_option("twg_gpo_include_count", $include_count);
 		update_option("twg_gpo_button_location", $_POST['twg_gpo_button_location']);
-		update_option("twg_gpo_button_language", $_POST['twg_gpo_lang']);
+		update_option("twg_gpo_button_language", $_POST['twg_gpo_button_language']);
 		update_option("twg_gpo_button_display_in", $_POST['twg_gpo_button_display_in']);
 		
 		$msg  = 'Settings Saved!';
@@ -50,10 +97,9 @@ function gpo_admin_page() {
 
 <div class="wrap">
 
-	<?php if($msg){ ?>
+	<?php if($msg): ?>
         <div class="updated" id="message"><p><?php echo $msg; ?></p></div>
-    <?php } ?>
-
+    <?php endif; ?>
 
 	<h2><img src="<?php echo get_bloginfo('url').'/wp-content/plugins/googleplusone-button/images/+1.jpg'; ?>"  /> Google +1 Button</h2>
 	
@@ -103,14 +149,16 @@ function gpo_admin_page() {
 		</div>
         
         
-       
-        
-       <!-- <div class="element">	
+        <div class="element">	
 			<label>Button Language:</label>
 			<select id="twg_gpo_button_language"  name="twg_gpo_button_language" >
-                    
+                      <?php if(is_array($lang)):?>
+                      <?php foreach($lang as $l): ?>
+                          <option value="<?php echo $l[0]; ?>" <?php if($twg_gpo_button_language == $l[0]) echo "selected='selected'" ?>><?php echo  $l[1]; ?></option>
+                      <?php endforeach;endif; ?>
              </select>
-		</div>-->
+		</div>
+ 
 		<div><input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" /></div>
        
 		</form>	
