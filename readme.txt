@@ -7,7 +7,7 @@ Tested up to: 3.2
 Stable tag: 1.2
  
 == Description ==
-
+ 
 [Author Site](http://www.thewebgig.com)|
 [Plugin Home Page](http://www.thewebgig.com/google-plusone-button-wordpress-plugin/)
 
