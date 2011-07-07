@@ -5,7 +5,7 @@ Tags: Google +1, Google Plusone(+1) Button , Google plus one,Google plus one but
 Requires at least: 3.0+
 Tested up to: 3.2
 Stable tag: 1.2
-
+ 
 == Description ==
 
 [Author Site](http://www.thewebgig.com)|
@@ -45,3 +45,8 @@ Intallation is easy. Install it normally as you do with rest of the plugins
 
 = 1.0.1 =
 * Tested in 3.2
+
+= 1.2 =
+* Added an option to display the button in languages supported by google.
+
+* Fixed a url related issue.
