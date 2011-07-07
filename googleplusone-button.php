@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Google Plusone(+1) Button
- * @version 1.0.1
+ * @version 1.2
  * @author Sagar Bhandari <webgig.sagar@gmail.com>
  */
 
@@ -11,7 +11,7 @@
 	Author: Sagar Bhandari
 	Author URI: http://www.thewebgig.com
 	Plugin URI: http://www.thewebgig.com/google-plusone-button-wordpress-plugin/
-	Version: 1.0.1
+	Version: 1.2
 	License: GPL
 */
 
