@@ -91,6 +91,7 @@ function twg_gpo_button_main(){
  	
 	if ($twg_gpo_button_location == 'left'){
 		 return  '<div id="gpo_leftcontainer"><div class="gpo_buttons"><g:plusone size="'.$twg_gpo_button_size.'" count="'.$twg_gpo_include_count.'"></g:plusone></div></div>';
+		 return;
 	} else if (($twg_gpo_button_location == 'top') || ($twg_gpo_button_location == 'bottom') || ($twg_gpo_button_location == 'both')){
 		return '<div id="gpo_bottomcontainer">
 						<div class="gpo_buttons">
