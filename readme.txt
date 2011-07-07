@@ -1,5 +1,5 @@
 === Google Plusone(+1) Button ===
-Contributors: webgig, pravash chamling Rai
+Contributors: webgig, Pravash Chamling Rai
 Plugin Site: http://www.thewebgig.com
 Tags: Google +1, Google Plusone(+1) Button , Google plus one,Google plus one button, Google +1 button 
 Requires at least: 3.0+
