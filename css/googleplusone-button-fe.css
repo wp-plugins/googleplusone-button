@@ -1,0 +1,29 @@
+@charset "utf-8";
+/**
+ * @package Google Plusone(+1) Button
+ * @version 1.0.1
+ * @author Sagar Bhandari <webgig.sagar@gmail.com>
+ */
+ 
+.gpo_leftcontainer {
+	float:left;
+	top: 0px;
+	left: opx;
+}
+
+.gpo_leftcontainer .gpo_buttons {
+	margin:4px;
+	padding-bottom:2px;
+	float:left;
+	clear:both;
+}
+
+.gpo_bottomcontainer {
+	width:50%;
+	padding-top:1px;
+}
+
+.gpo_bottomcontainer .gpo_buttons {
+	margin:4px;
+	float:left;
+}
