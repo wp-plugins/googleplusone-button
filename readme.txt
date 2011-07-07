@@ -7,10 +7,10 @@ Tested up to: 3.2
 Stable tag: 1.0.1
 
 == Description ==
-<br />
+
 [Author Site](http://www.thewebgig.com)|
 [Plugin Home Page](http://www.thewebgig.com/google-plusone-button-wordpress-plugin/)
-<br />
+
 This plugin displays the google +1 button in different styles.
 
 * Display Google +1 button in the posts, pages, single posts or everywhere.
@@ -27,16 +27,16 @@ This plugin displays the google +1 button in different styles.
 == Installation ==
 Intallation is easy. Install it normally as you do with rest of the plugins
 
-1. Download and unzip the plugin .zip.<br />
-2. Copy the unzipped folder in your Plugins directory under wordpress installation. (wp-content/plugins)<br />
-3. Activate the plugin through the plugin window in the admin panel.<br />
+1. Download and unzip the plugin .zip.
+2. Copy the unzipped folder in your Plugins directory under wordpress installation. (wp-content/plugins)
+3. Activate the plugin through the plugin window in the admin panel.
 4. Configure the settings through Settings->Google Plusone(+1) Button in the admin panel.
 
 
 == Screenshots ==
 1. Frontend View
 2. Admin View
-<br />
+
 
 == Changelog ==
 
