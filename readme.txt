@@ -19,7 +19,7 @@ This plugin displays the google +1 button in different styles.
 
 * Display Google +1 button in four different sizes (Standard, small, medium and Tall)
 
-* Display Google +1 button using Template Tag <code> &lt;?php if(function_exists('twg_gpo_button')) twg_gpo_button();?&gt;</code>  or Shortcode  <code> [twg_gpo_button] </code> at any desired position.
+* Display Google +1 button using Template Tag &lt;?php if(function_exists('twg_gpo_button')) twg_gpo_button();?&gt; or Shortcode [twg_gpo_button] at any desired position.
 
 * Nice Preview  in the settings page with a dummy post.
 
