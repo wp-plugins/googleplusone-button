@@ -47,6 +47,5 @@ Intallation is easy. Install it normally as you do with rest of the plugins
 * Tested in 3.2
 
 = 1.2 =
-* Added an option to display the button in languages supported by google.
-
+* Added an option to display the button in different languages supported by google+.
 * Fixed a url related issue.
