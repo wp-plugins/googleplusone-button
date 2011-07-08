@@ -18,9 +18,7 @@ function twg_gpo_print_scripts(){
 }
 
 function twg_gpo_init() {
-	
 	if (!is_admin()) {		
-	   // wp_enqueue_script('gpofejs', 'http://apis.google.com/js/plusone.js','','');
 	    wp_enqueue_style('gpofecss', get_bloginfo('url').'/wp-content/plugins/googleplusone-button/css/googleplusone-button-fe.css');
 	}
 }    
@@ -82,7 +80,7 @@ function twg_gpo_button_main(){
 		return $op ;
 	} else if (($twg_gpo_button_location == 'top') || ($twg_gpo_button_location == 'bottom') || ($twg_gpo_button_location == 'both')){
 		return '<div class="gpo_bottomcontainer">
-						<div class="gpo_buttons"><!--<script type="text/javascript" src="http://apis.google.com/js/plusone.js">'.$lang.'</script>-->
+						<div class="gpo_buttons">
 						        <g:plusone href="'.get_permalink().'" size="'.$twg_gpo_button_size.'" count="'.$twg_gpo_include_count.'"></g:plusone>
 						</div>
 			   </div>
